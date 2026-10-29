@@ -1,0 +1,17 @@
+# Creates a PAID service only if the repository owner deploys this Blueprint.
+services:
+  - type: web
+    name: motosalt-api
+    runtime: docker
+    plan: starter
+    healthCheckPath: /health
+    autoDeployTrigger: "off"
+    envVars:
+      - key: MOTOSALT_API_PORT
+        value: "3001"
+      - key: MOTOSALT_DATABASE_PATH
+        value: /data/motosalt.sqlite
+    disk:
+      name: motosalt-data
+      mountPath: /data
+      sizeGB: 1

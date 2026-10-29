@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Motosalt",
+    "slug": "motosalt",
+    "scheme": "motosalt",
+    "version": "0.3.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#f6f6f0",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pigeonhunt3r.motosalt"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundColor": "#243d32",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "com.pigeonhunt3r.motosalt",
+      "blockedPermissions": [
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-sharing",
+      "expo-secure-store",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Motosalt bruger din position til at vise dig på ruten. Gruppedeling er et særskilt tilvalg."
+        }
+      ],
+      "expo-notifications"
+    ]
+  }
+}

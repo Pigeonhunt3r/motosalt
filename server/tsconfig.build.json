@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "../server-dist",
+    "rootDir": "..",
+    "module": "Node16",
+    "moduleResolution": "Node16"
+  },
+  "include": [
+    "./index.ts",
+    "./app.ts",
+    "./winter-proxy.ts",
+    "../src/core/models.ts",
+    "../src/domain.ts"
+  ],
+  "exclude": ["./*.test.ts", "../scripts"]
+}

@@ -1,0 +1,13 @@
+.git
+**/node_modules
+.cache
+.data
+.env
+.env.*
+android
+ios
+dist
+server-dist
+.expo
+src/generated
+artifacts

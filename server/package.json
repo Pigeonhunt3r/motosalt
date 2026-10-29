@@ -1,0 +1,13 @@
+{
+  "name": "motosalt-api",
+  "version": "0.3.0",
+  "private": true,
+  "engines": {
+    "node": ">=24.19.0 <25"
+  },
+  "dependencies": {
+    "fastify": "5.12.7",
+    "@fastify/cors": "11.3.1",
+    "@fastify/rate-limit": "11.2.1"
+  }
+}
